@@ -133,13 +133,24 @@
     <osgi.dynamicImport>*</osgi.dynamicImport>
   </properties>
 
+  <dependencyManagement>
+    <dependencies>
+<!-- 使用import实现多继承， parent用来做项目聚合-->
+      <dependency>
+        <groupId>org.mybatis</groupId>
+        <artifactId>mybatis-parent</artifactId>
+        <version>32</version>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
   <dependencies>
-    <dependency>
-      <groupId>org.mybatis</groupId>
-      <artifactId>mybatis-parent</artifactId>
-      <version>32</version>
-      <type>pom</type>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.mybatis</groupId>-->
+<!--      <artifactId>mybatis-parent</artifactId>-->
+<!--      <version>32</version>-->
+<!--      <type>pom</type>-->
+<!--    </dependency>-->
 
     <dependency>
       <groupId>ognl</groupId>
