@@ -7,9 +7,11 @@
     <settings>
         <setting name="lazyLoadingEnabled" value="true"/>
         <!--  <setting name="aggressiveLazyLoading" value="false"/>  -->
+        <setting name="logImpl" value="Slf4j"/>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
     <typeAliases>
-        <typeAlias alias="content" type="com.dragon.entity.Content"/>
+<!--        <typeAlias alias="content" type="com.dragon.entity.Content"/>-->
     </typeAliases>
     <!--     <typeHandlers> -->
     <!--         <typeHandler jdbcType="VARCHAR" javaType="string" handler="com.gethin.handler.MyStringHandler"/> -->

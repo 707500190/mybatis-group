@@ -3,7 +3,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.dragon.mapper.ContentMapper">
 
-
     <select id="queryContent" resultType="com.dragon.entity.Content">
                 select * from Content
 

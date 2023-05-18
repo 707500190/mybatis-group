@@ -2,6 +2,7 @@ package com.dragon.mapper;
 
 
 import com.dragon.entity.Content;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -12,6 +13,6 @@ import java.util.List;
  */
 public interface ContentMapper {
 
-    List<Content> queryContent();
+    List<Content> queryContent(@Param("p1") String p1, @Param("p2") String p2);
 
 }
