@@ -15,4 +15,6 @@ public interface ContentMapper {
 
     List<Content> queryContent(@Param("p1") String p1, @Param("p2") String p2);
 
+    void update(String title ,Integer id);
+
 }

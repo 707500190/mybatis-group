@@ -3,6 +3,7 @@ package com.dragon.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -11,7 +12,8 @@ import java.util.Date;
  * @date 2023/3/20
  */
 @Data
-public class Content {
+//开启二级缓存 实体类必须实现序列化
+public class Content implements Serializable {
 
     private Integer id;
 
